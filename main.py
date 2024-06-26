@@ -16,7 +16,7 @@ def write_letter(names):
             print(name)
             new_letter = letter.replace('[name]', name)
             print(new_letter)
-            with open(f'./Output/ReadyToSend/{name}.txt', 'w') as new_file:
+            with open(f'./Output/ReadyToSend/letter_for_{name}.txt', 'w') as new_file:
                 new_file.write(new_letter)
 
 
